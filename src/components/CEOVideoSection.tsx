@@ -128,7 +128,7 @@ export default function CEOVideoSection() {
 
                 {/* Name plate */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-choco-950 via-choco-950/95 to-transparent px-6 py-5">
-                  <p className="font-display text-lg font-bold text-cream-100">Sarah Al-Moggy</p>
+                  <p className="font-display text-lg font-bold text-cream-100">Syeda Tuba Kamal</p>
                   <p className="text-xs uppercase tracking-[0.25em] text-gold-400">Founder & CEO</p>
                 </div>
 
@@ -170,7 +170,7 @@ export default function CEOVideoSection() {
               <blockquote className="relative pl-5">
                 <div className="absolute left-0 top-0 h-full w-0.5 bg-gradient-to-b from-gold-400/80 to-transparent" />
                 <p className="text-base italic leading-relaxed text-cream-100/75">{CEO_QUOTE}</p>
-                <footer className="mt-3 text-sm font-semibold text-gold-400">— Sarah Al-Moggy</footer>
+                <footer className="mt-3 text-sm font-semibold text-gold-400">— Syeda Tuba Kamal</footer>
               </blockquote>
 
               <p className="text-sm leading-relaxed text-cream-100/60">
@@ -323,7 +323,7 @@ function VideoModal({ onClose }: { onClose: () => void }) {
             <div className="flex items-center gap-3">
               <CrownedLogo size={36} animate={false} />
               <div>
-                <p className="font-display text-sm font-bold text-cream-100">Sarah Al-Moggy</p>
+                <p className="font-display text-sm font-bold text-cream-100">Syeda Tuba Kamal</p>
                 <p className="text-[10px] uppercase tracking-widest text-gold-400">CEO Introduction</p>
               </div>
             </div>
