@@ -20,6 +20,7 @@ import PremiumCursor from '@/components/PremiumCursor';
 import BrandVideoSection from '@/components/BrandVideoSection';
 import ChocolateMascot from '@/components/ChocolateMascot';
 import CheckoutModal from '@/components/CheckoutModal';
+import CEOVideoSection from '@/components/CEOVideoSection';
 
 function App() {
   const [introDone, setIntroDone] = useState(false);
@@ -41,6 +42,7 @@ function App() {
           <GiftBasket />
           <FeaturedSlider />
           <Testimonials />
+          <CEOVideoSection />
           <About />
           <Contact />
         </main>

@@ -1,0 +1,93 @@
+AI Prompt – Upgrade Moggy Chocolate Website (Mascot + CEO Video Section)
+
+Enhance the Moggy Chocolate website with premium interactive features, luxury animations, and cinematic user experience. Maintain a consistent luxury chocolate theme using elegant gold, rich chocolate brown, cream, and black colors.
+
+🍫 Interactive Chocolate Mascot
+
+Move the cute Moggy Chocolate mascot to the bottom-left corner of every page.
+
+Appearance
+Cute 2D chocolate character
+Big expressive eyes
+Friendly smile
+Soft breathing animation
+Smooth blinking
+Premium glossy chocolate finish
+Mouse Tracking
+The mascot's pupils should smoothly follow the mouse cursor at all times.
+Click Interaction
+
+When the user clicks the mascot:
+
+The mascot becomes excited.
+It jumps happily.
+It runs after the user's cursor for 5–7 seconds with a fun running animation.
+It leaves tiny chocolate sparkles and cocoa particles behind while running.
+After a few seconds, it waves at the user.
+Then it automatically returns to its original position in the bottom-left corner using a smooth animation.
+Resume idle breathing and eye-tracking animations.
+
+Additional interactions:
+
+Smile when hovered.
+Celebrate with confetti when a purchase is completed.
+Hold a tiny Moggy Chocolate bar while idle.
+Occasionally wink at the visitor.
+🎥 CEO Video Section
+
+Create a premium section titled:
+
+Meet Our CEO
+
+Display:
+
+A professional portrait of the Moggy Chocolate CEO.
+A beautiful luxury office background.
+A short introduction.
+A large elegant Play Video button.
+
+When the user clicks Play Video:
+
+Open a cinematic video player in a beautiful modal.
+Darken the background.
+Play the CEO introduction video.
+Support:
+Play
+Pause
+Volume control
+Full-screen mode
+Replay
+Progress bar
+Captions (optional)
+Close with a smooth fade animation.
+🎬 CEO Video Content
+
+The CEO appears in a luxurious modern office wearing an elegant black business suit, stylish glasses, and a warm smile.
+
+She says:
+
+"Hello and welcome to Moggy Chocolate. I'm proud to introduce a chocolate brand created with passion, premium ingredients, and exceptional quality.
+
+Every Moggy Chocolate is freshly crafted using carefully selected cocoa beans and premium ingredients to deliver a rich, smooth, and unforgettable taste.
+
+We offer a wide variety of delicious flavors, elegant gift boxes, and customizable chocolate baskets for every special occasion.
+
+Our chocolates are prepared under strict quality standards to ensure freshness and premium quality in every bite.
+
+Customers from around the world trust Moggy Chocolate for its taste, craftsmanship, and luxurious presentation.
+
+You can order your favorite chocolates anytime, anywhere through our website, and we'll deliver them with care.
+
+Thank you for choosing Moggy Chocolate—where every bite is crafted to create happiness."
+
+✨ Premium Features
+Smooth fade-in animations.
+Gold-accented video player controls.
+Luxury hover effects.
+Responsive design for desktop, tablet, and mobile.
+Lazy-load the video for faster page performance.
+Display the golden crowned M logo before and after the video.
+End the video with the slogan:
+"Moggy Chocolate — Crafted with Passion, Loved Worldwide."
+
+The entire experience should feel polished, interactive, elegant, and comparable to a premium international luxury chocolate brand website.
