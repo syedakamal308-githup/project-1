@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-cream-100 text-choco-800 font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-gold-400 text-choco-900;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .container-luxe {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-400 px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-choco-900 transition-all duration-300 hover:bg-gold-300 hover:shadow-glow-gold active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-choco-800/30 bg-transparent px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-choco-800 transition-all duration-300 hover:border-choco-800 hover:bg-choco-800 hover:text-cream-100 active:scale-95;
+  }
+
+  .btn-cream {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cream-100 px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-choco-800 transition-all duration-300 hover:bg-white hover:shadow-soft active:scale-95;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-gold-600;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-choco {
+    @apply bg-gradient-to-br from-choco-700 via-choco-800 to-choco-950 bg-clip-text text-transparent;
+  }
+
+  .card-luxe {
+    @apply rounded-3xl bg-white/80 backdrop-blur-sm shadow-soft ring-1 ring-choco-800/5;
+  }
+
+  .glass-dark {
+    @apply bg-choco-900/70 backdrop-blur-md ring-1 ring-white/10;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .perspective {
+    perspective: 1200px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .bg-grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  }
+}
