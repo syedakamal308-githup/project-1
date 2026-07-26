@@ -19,8 +19,10 @@ interface ShopState {
   isCartOpen: boolean;
   isWishlistOpen: boolean;
   searchOpen: boolean;
+  isCheckoutOpen: boolean;
   cartCount: number;
   cartTotal: number;
+  cartAddedAt: number;
   addToCart: (product: Product, quantity?: number) => void;
   removeFromCart: (productId: string) => void;
   updateQuantity: (productId: string, quantity: number) => void;
@@ -31,6 +33,8 @@ interface ShopState {
   openWishlist: () => void;
   closeWishlist: () => void;
   setSearchOpen: (open: boolean) => void;
+  openCheckout: () => void;
+  closeCheckout: () => void;
 }
 
 const ShopContext = createContext<ShopState | null>(null);
@@ -41,6 +45,8 @@ export function ShopProvider({ children }: { children: ReactNode }) {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
+  const [cartAddedAt, setCartAddedAt] = useState(0);
 
   const addToCart = useCallback((product: Product, quantity = 1) => {
     setCart((prev) => {
@@ -55,6 +61,7 @@ export function ShopProvider({ children }: { children: ReactNode }) {
       return [...prev, { product, quantity }];
     });
     setIsCartOpen(true);
+    setCartAddedAt(Date.now());
   }, []);
 
   const removeFromCart = useCallback((productId: string) => {
@@ -99,8 +106,10 @@ export function ShopProvider({ children }: { children: ReactNode }) {
     isCartOpen,
     isWishlistOpen,
     searchOpen,
+    isCheckoutOpen,
     cartCount,
     cartTotal,
+    cartAddedAt,
     addToCart,
     removeFromCart,
     updateQuantity,
@@ -111,6 +120,8 @@ export function ShopProvider({ children }: { children: ReactNode }) {
     openWishlist: () => setIsWishlistOpen(true),
     closeWishlist: () => setIsWishlistOpen(false),
     setSearchOpen,
+    openCheckout: () => { setIsCartOpen(false); setIsCheckoutOpen(true); },
+    closeCheckout: () => setIsCheckoutOpen(false),
   };
 
   return <ShopContext.Provider value={value}>{children}</ShopContext.Provider>;

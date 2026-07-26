@@ -1,0 +1,196 @@
+Premium AI Prompt – Upgrade the Moggy Chocolate Website
+
+Transform the Moggy Chocolate website into a world-class luxury chocolate shopping experience with cinematic animations, premium UI/UX, realistic 3D effects, and smooth page transitions. Every interaction should feel elegant, fast, and premium.
+
+👑 Brand Identity
+Replace the current Moggy "M" logo with a luxurious golden letter "M" wearing a royal crown.
+The logo should have a polished metallic gold finish, subtle reflections, sparkling highlights, and a premium animated glow.
+Add a beautiful logo reveal animation when the website loads.
+🍫 Before "Complete Moggy Collection"
+
+Insert a beautiful cinematic promotional section before the product collection.
+
+The section should include:
+
+A short autoplay hero video (muted with optional sound)
+Slow-motion chocolate melting
+Fresh cocoa beans
+Chocolate being poured
+Premium gift boxes
+Happy customers enjoying Moggy Chocolate
+Luxury packaging close-ups
+Cinematic transitions
+Animated slogan:
+"Crafted with Passion. Shared with the World."
+😊 Interactive Chocolate Mascot
+
+Create a cute 2D animated Moggy Chocolate mascot.
+
+Features:
+
+Big expressive eyes
+Friendly smile
+Cute eyebrows
+Small arms and legs
+Premium chocolate appearance
+Idle breathing animation
+Happy blinking animation
+Waving animation
+Jump animation on hover
+Eye Tracking
+
+The mascot's pupils should smoothly follow the user's mouse cursor across the screen.
+
+Extra interactions:
+
+Smile when clicked
+Wave after a few seconds of inactivity
+Celebrate when an item is added to the cart
+Dance after a successful purchase
+✨ Premium Cursor
+
+Replace the default cursor with a luxury custom cursor.
+
+Design:
+
+Metallic gold
+Diamond-like shine
+Crown-inspired elegant pointer
+Soft glowing effect
+Smooth trailing particles
+Hover animation
+Click ripple animation
+Small sparkle effects
+🎁 Checkout Experience
+
+Create a beautiful multi-step checkout.
+
+Step 1
+
+Shopping Cart
+
+Display:
+
+Products
+Quantity controls
+Remove items
+Gift wrapping option
+Promo code
+Shipping estimate
+Step 2
+
+Customer Information
+
+Collect:
+
+Name
+Email
+Phone
+Address
+Country
+City
+Postal Code
+Step 3
+
+Shipping Method
+
+Options:
+
+Standard Delivery
+Express Delivery
+Same-Day Delivery (where available)
+International Shipping
+
+Show estimated delivery dates.
+
+Step 4
+
+Payment
+
+Support:
+
+Credit Card
+Debit Card
+PayPal
+Apple Pay
+Google Pay
+Stripe
+Cash on Delivery (where available)
+Step 5
+
+Review Order
+
+Display:
+
+Products
+Gift basket preview
+Shipping details
+Payment method
+Taxes
+Total amount
+Step 6
+
+Order Placed Animation
+
+When the customer clicks Place Order, show a cinematic success animation:
+
+Golden confetti
+Floating chocolate pieces
+Sparkles
+Premium success sound
+Animated delivery truck
+Gift box opening animation
+Customer's order number appears
+
+Display:
+
+🎉 Thank You for Choosing Moggy Chocolate!
+
+Your order has been placed successfully.
+
+We'll prepare your freshly crafted chocolates and deliver them with care.
+
+Buttons:
+
+Track Order
+Continue Shopping
+Download Invoice
+🎬 Moggy Brand Video
+
+Add a premium promotional video showcasing:
+
+Chocolate making process
+Cocoa farms
+Fresh ingredients
+Luxury packaging
+Gift baskets
+International deliveries
+Happy customers
+Premium lifestyle scenes
+Close-up chocolate breaking shots
+Chocolate melting in slow motion
+
+Finish with the golden crowned M logo and the slogan:
+
+"Moggy Chocolate — Crafted with Passion, Loved Worldwide."
+
+✨ Premium Animations
+
+Add:
+
+Smooth page transitions
+Floating cocoa particles
+Chocolate drip animations
+Luxury hover effects
+Glassmorphism UI
+Soft shadows
+Gold gradients
+Elegant typography
+Cinematic lighting
+Responsive design
+Dark and light mode
+High-performance animations
+Accessibility support
+SEO optimization
+
+The final website should feel like a luxury international chocolate brand with a polished, premium shopping experience comparable to the world's best luxury e-commerce websites.

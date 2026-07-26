@@ -2,6 +2,7 @@ import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useState } from 'react';
 import { Search, ShoppingBag, Heart, Menu, X } from 'lucide-react';
 import { useShop } from '@/context/ShopContext';
+import CrownedLogo from '@/components/CrownedLogo';
 
 const LINKS = [
   { label: 'Home', href: '#home' },
@@ -41,17 +42,14 @@ export default function Navbar() {
         <nav className="container-luxe flex items-center justify-between py-4">
           {/* Logo */}
           <a href="#home" className="group flex items-center gap-2">
-            <motion.div
-              whileHover={{ rotate: -8, scale: 1.05 }}
-              className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-gold-300 to-gold-500 text-choco-900 shadow-glow-gold"
-            >
-              <span className="font-display text-xl font-bold">M</span>
+            <motion.div whileHover={{ scale: 1.08 }} transition={{ type: 'spring', stiffness: 400, damping: 20 }}>
+              <CrownedLogo size={44} animate={true} />
             </motion.div>
             <div className="flex flex-col leading-none">
-              <span className={`font-display text-lg font-bold transition-colors ${scrolled ? 'text-cream-100' : 'text-cream-100'}`}>
+              <span className="font-display text-lg font-bold text-cream-100">
                 Moggy
               </span>
-              <span className={`text-[10px] uppercase tracking-[0.3em] ${scrolled ? 'text-gold-300' : 'text-gold-300'}`}>
+              <span className="text-[10px] uppercase tracking-[0.3em] text-gold-300">
                 Chocolate
               </span>
             </div>

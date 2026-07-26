@@ -16,12 +16,18 @@ import CartDrawer from '@/components/CartDrawer';
 import WishlistDrawer from '@/components/WishlistDrawer';
 import SearchOverlay from '@/components/SearchOverlay';
 import MoggyChat from '@/components/MoggyChat';
+import PremiumCursor from '@/components/PremiumCursor';
+import BrandVideoSection from '@/components/BrandVideoSection';
+import ChocolateMascot from '@/components/ChocolateMascot';
+import CheckoutModal from '@/components/CheckoutModal';
 
 function App() {
   const [introDone, setIntroDone] = useState(false);
 
   return (
     <ShopProvider>
+      <PremiumCursor />
+
       {!introDone && <IntroLoader onComplete={() => setIntroDone(true)} />}
 
       <div className="relative min-h-screen bg-cream-100">
@@ -29,6 +35,7 @@ function App() {
         <main>
           <Hero />
           <WhyMoggy />
+          <BrandVideoSection />
           <Collection />
           <SugarFree />
           <GiftBasket />
@@ -44,6 +51,8 @@ function App() {
         <WishlistDrawer />
         <SearchOverlay />
         <MoggyChat />
+        <CheckoutModal />
+        <ChocolateMascot />
       </div>
     </ShopProvider>
   );

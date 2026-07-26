@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useMemo, useState } from 'react';
+import CrownedLogo from '@/components/CrownedLogo';
 
 interface IntroLoaderProps {
   onComplete: () => void;
@@ -101,11 +102,20 @@ export default function IntroLoader({ onComplete }: IntroLoaderProps) {
             }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
           >
+            {/* Crowned logo */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.6 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+              className="mb-4"
+            >
+              <CrownedLogo size={88} animate />
+            </motion.div>
             <motion.div
               className="font-display text-5xl font-bold tracking-tight text-cream-100 sm:text-7xl"
               initial={{ letterSpacing: '0.5em', opacity: 0 }}
               animate={{ letterSpacing: '0.02em', opacity: 1 }}
-              transition={{ duration: 1.2, ease: 'easeOut' }}
+              transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
             >
               <span className="text-gradient-gold">Moggy</span>{' '}
               <span className="text-cream-100">Chocolate</span>
@@ -114,7 +124,7 @@ export default function IntroLoader({ onComplete }: IntroLoaderProps) {
               className="mt-4 text-xs font-medium uppercase tracking-[0.4em] text-gold-300/80"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 1 }}
+              transition={{ delay: 1.0, duration: 1 }}
             >
               {TAGLINE}
             </motion.p>

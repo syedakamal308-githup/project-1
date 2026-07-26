@@ -2,8 +2,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Plus, Minus, Trash2, ShoppingBag, ArrowRight } from 'lucide-react';
 import { useShop } from '@/context/ShopContext';
 
+
 export default function CartDrawer() {
-  const { isCartOpen, closeCart, cart, removeFromCart, updateQuantity, cartTotal, cartCount } = useShop();
+  const { isCartOpen, closeCart, cart, removeFromCart, updateQuantity, cartTotal, cartCount, openCheckout } = useShop();
 
   const shipping = cartTotal > 50 ? 0 : cartTotal > 0 ? 5.95 : 0;
   const total = cartTotal + shipping;
@@ -139,7 +140,7 @@ export default function CartDrawer() {
                     <span className="font-display">${total.toFixed(2)}</span>
                   </div>
                 </div>
-                <button className="btn-gold mt-4 w-full">
+                <button onClick={openCheckout} className="btn-gold mt-4 w-full">
                   Checkout
                   <ArrowRight className="h-4 w-4" />
                 </button>
