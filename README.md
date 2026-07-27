@@ -33,6 +33,16 @@ Version Control: Git + GitHub
 ![Homepage](homepage.png)
 ![Moggy AI Chat](ai-chat.png)
 ![Products](products.png)
+## 📸 Screenshots
+
+### 1. AI Prompt
+![AI Screenshot](1.jpeg)
+
+### 2. Code 
+![Code Screenshot](2.jpeg)
+
+### 3. Website with Ghost
+![Website Screenshot](3.jpeg)
 
 ### g. How to Run Locally
 1. Clone the repo: `git clone https://github.com/syedakamal308-github/project-1`
