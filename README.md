@@ -44,6 +44,9 @@ Version Control: Git + GitHub
 ### 3. Website with Ghost
 ![Website Screenshot](3.jpeg)
 
+### 4. AI Prompt
+![AI Screenshot](4.jpeg)
+
 ### g. How to Run Locally
 1. Clone the repo: `git clone https://github.com/syedakamal308-github/project-1`
 2. Install dependencies: `npm install`
