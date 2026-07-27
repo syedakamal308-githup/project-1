@@ -44,6 +44,8 @@ Version Control: Git + GitHub
 ### 1. AI Prompt
 ![AI Screenshot](1.jpeg)
 
+https://github.com/syedakamal308-githup/project-1/blob/main/website_page-0018.jpg
+
 ### g. How to Run Locally
 1. Clone the repo: `git clone https://github.com/syedakamal308-github/project-1`
 2. Install dependencies: `npm install`
