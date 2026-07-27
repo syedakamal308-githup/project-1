@@ -16,8 +16,11 @@ https://project-1-b22rndqmd-syeda-s.vercel.app
 
 ### d. AI Feature
 **Moggy AI - Your Chocolate Assistant**
-What it does: Recommends chocolates and gifts based on occasion, budget, and flavor preference.
-How: Uses Google Gemini API with custom system prompt
+d. AI Feature
+
+Moggy AI - Your Chocolate Assistant 
+What it does: Recommends chocolates and gifts based on occasion, budget, and flavor preference. 
+How: Currently using mock AI responses for demo. Built with ChatGPT prompts. 
 System Prompt: "You are Moggy AI, a friendly chocolate expert. Help users find the perfect chocolate gift by asking about occasion, budget, and favorite flavors. Keep tone warm and premium."
 
 ### e. Tools & Technologies
