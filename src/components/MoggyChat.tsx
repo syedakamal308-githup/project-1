@@ -3,8 +3,26 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send, Sparkles, ShoppingBag } from 'lucide-react';
 import { useShop } from '@/context/ShopContext';
 import { products, sugarFreeProducts, type Product } from '@/data/products';
-import { getAIResponse, type ChatMessage } from '@/lib/moggyAI';
+import { type ChatMessage } from '@/lib/moggyAI';
 
+// Gemini AI connect
+const sendToGemini = async (userMessage: string) => {
+  const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+  
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: userMessage }] }]
+      }),
+    }
+  );
+
+  const data = await res.json();
+  return data.candidates[0].content.parts[0].text;
+}
 const allProducts = [...products, ...sugarFreeProducts];
 
 const WELCOME: ChatMessage = {
@@ -61,7 +79,7 @@ export default function MoggyChat() {
   }, [isOpen]);
 
   const handleSend = useCallback(
-    (text: string) => {
+   async (text: string) => {
       const trimmed = text.trim();
       if (!trimmed) return;
 
@@ -70,12 +88,13 @@ export default function MoggyChat() {
       setInput('');
       setIsTyping(true);
 
-      const response = getAIResponse(trimmed, {
-        cart,
-        addToCart,
-        openCart,
-        setSearchOpen: () => {},
-      });
+      
+        const aiText = await sendToGemini(trimmed);
+
+        const response = {
+          text: aiText,
+          productRefs: []
+     };
 
       const delay = 500 + Math.random() * 600;
       setTimeout(() => {
