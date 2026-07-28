@@ -74,7 +74,6 @@ function App() {
   const data = await res.json();
   return data.candidates[0].content.parts[0].text;
 }
-  );
 }
 
 export default App;
