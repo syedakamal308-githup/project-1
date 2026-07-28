@@ -6,7 +6,7 @@ Moggy Chocolates is an e-commerce website for premium handcrafted chocolates.
 Problem: Finding and gifting premium chocolates online is hard. This app makes it easy with AI recommendations.
 
 ### b. LIVE URL
-https://project-1-b22rndqmd-syeda-s.vercel.app
+https://project-1-omega-rust.vercel.app/
 
 ### c. Key Features
 - Beautiful product showcase with 13 signature flavors
