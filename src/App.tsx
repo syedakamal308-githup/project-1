@@ -57,6 +57,8 @@ function App() {
         <ChocolateMascot />
       </div>
     </ShopProvider>
+     );
+}
     const sendToGemini = async (userMessage: string) => {
   const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
   
