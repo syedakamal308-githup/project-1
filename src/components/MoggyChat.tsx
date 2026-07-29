@@ -1,3 +1,4 @@
+import { sendToGemini } from '../App';
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send, Sparkles, ShoppingBag } from 'lucide-react';
