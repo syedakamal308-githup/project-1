@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { useState } from 'react';
+import { GoogleGenerativeAI } from '@google/generative-ai'; // YE LINE ADD KARO
+import { ShopProvider } from '@/context/ShopContext';
 import { ShopProvider } from '@/context/ShopContext';
 import IntroLoader from '@/components/IntroLoader';
 import Navbar from '@/components/Navbar';
@@ -75,6 +78,22 @@ function App() {
 
   const data = await res.json();
   return data.candidates[0].content.parts[0].text;
+  // Gemini Setup
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+
+export const sendToGemini = async (userMessage: string) => {
+  try {
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const result = await model.generateContent(userMessage);
+    const response = await result.response;
+    return response.text();
+  } catch (error) {
+    console.error("Gemini Error:", error);
+    return "Sorry, main abhi jawab nahi de pa raha. API key check karo.";
+  }
+}
+
+export default function App() {    
 }
 }
 
